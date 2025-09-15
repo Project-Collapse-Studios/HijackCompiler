@@ -23,3 +23,5 @@ dist
 # Compiled modules
 *.pyd
 *.pyi
+
+nuitka-crash-report.xml
