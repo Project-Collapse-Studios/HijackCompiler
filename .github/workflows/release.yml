@@ -62,7 +62,8 @@ jobs:
   
       - run: |
           chmod +x ./build.sh
-          ./build.sh
+
+          python_exe="python" bash ./build.sh
           
         shell: bash
 
