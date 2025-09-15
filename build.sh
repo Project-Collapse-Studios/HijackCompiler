@@ -14,7 +14,8 @@ if [ "$RUNNER_OS" == "Linux" ]; then
         cp $i dist/transforms
     done
     chmod +x build/hijackcompiler.bin
-    cp build/hijackcompiler.bin dist/hijackcompiler
+    cp build/hijackcompiler.bin dist/hijackcompiler.exe
+    # Here we copy it and set it's extension as .exe, because hammer won't be able to launch it otherwise (it would require manual reconfiguration)
 
 elif [ "$RUNNER_OS" == "Windows" ]; then
     for i in build/*.pyd; do
